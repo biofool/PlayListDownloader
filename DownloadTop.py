@@ -26,7 +26,7 @@ query = parse_qs(urlparse(PlayListUrl).query, keep_blank_values=True)
 playlist_id = query["list"][0]
 
 print(f'get all playlist items links from {playlist_id}')
-youtube = build("youtube", "v3", developerKey="AIzaSyD8kqHitMQTLrBmeGPitT1ucWcV8HWBXoE")
+youtube = build("youtube", "v3", developerKey="")
 
 request = youtube.playlistItems().list(
     part="snippet",
